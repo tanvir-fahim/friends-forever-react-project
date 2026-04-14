@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+
+    <h2 className='bg-green-500 text-4xl p-10 text-center'>React Project Coming...</h2>
   </StrictMode>,
 )
