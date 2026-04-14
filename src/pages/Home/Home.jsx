@@ -3,7 +3,7 @@ import HomeBanner from '../../components/HomeBanner/HomeBanner';
 
 const Home = () => {
     return (
-        <div className='bg-[#F8FAFC]'>
+        <div>
             <HomeBanner/>
         </div>
     );

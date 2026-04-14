@@ -9,7 +9,7 @@ const HomeBanner = () => {
     ];
 
     return (
-        <section className="w-full pt-30 pb-10 px-4">
+        <section className="w-full pt-10 pb-10 px-4">
             <div className="container mx-auto items-center">
 
                 <div className="text-center mb-8">
