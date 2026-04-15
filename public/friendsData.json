@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Tom",
+    "name": "Tom T",
     "image": "/images/Tom.webp",
     "email": "tom.cat@jerrychase.com",
     "days_since_contact": 2,
@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "name": "Jerry",
+    "name": "Jerry Jr",
     "image": "/images/Jerry.png",
     "email": "jerry.mouse@cheese.net",
     "days_since_contact": 1,
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "name": "Oggy",
+    "name": "Oggy Cat",
     "image": "/images/Oggy.png",
     "email": "oggy.blue@house.fr",
     "days_since_contact": 9,
@@ -37,7 +37,7 @@
   },
   {
     "id": 4,
-    "name": "Motu",
+    "name": "Motu Man",
     "image": "/images/Motu.webp",
     "email": "motu.samosa@furfuri.in",
     "days_since_contact": 25,
@@ -49,7 +49,7 @@
   },
   {
     "id": 5,
-    "name": "SpongeBob",
+    "name": "Sponge Bob",
     "image": "/images/Spongebob.png",
     "email": "spongebob.square@pineapple.sea",
     "days_since_contact": 1,
@@ -61,7 +61,7 @@
   },
   {
     "id": 6,
-    "name": "Doraemon",
+    "name": "Doraemon Robo",
     "image": "/images/dora.jpg",
     "email": "doraemon@gadget.jp",
     "days_since_contact": 17,
@@ -85,7 +85,7 @@
   },
   {
     "id": 8,
-    "name": "Hattori",
+    "name": "Ninja Hattori",
     "image": "/images/Hattori.webp",
     "email": "hattori.ninja@iga.com",
     "days_since_contact": 21,

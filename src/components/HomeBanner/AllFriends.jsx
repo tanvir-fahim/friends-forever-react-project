@@ -1,4 +1,5 @@
 import React, { use } from 'react';
+import { NavLink } from 'react-router';
 
 const AllFriends = ({ friendsPromise }) => {
 
@@ -8,7 +9,7 @@ const AllFriends = ({ friendsPromise }) => {
         <div className='container mx-auto'>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 container mx-auto'>
                 {
-                    friends.map(friend => <div key={friend.id} className="card bg-white shadow-md border border-gray-100 rounded-xl p-6">
+                    friends.map(friend => <NavLink to={`/friendDetails/${friend.id}`} key={friend.id} className="card bg-white shadow-md border border-gray-100 rounded-xl p-6">
                         <div className="flex justify-center mb-4">
                             <div className="avatar">
                                 <div className="w-24 rounded-full  border border-blue-600">
@@ -48,7 +49,7 @@ const AllFriends = ({ friendsPromise }) => {
                                 </p>
                             </div>
                         </div>
-                    </div>)
+                    </NavLink>)
                 }
             </div>
 

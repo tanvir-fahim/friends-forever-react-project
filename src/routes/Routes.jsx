@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Timeline from "../pages/Timeline/Timeline";
 import Stats from "../pages/Stats/Stats";
+import FriendDetails from "../components/FriendDetails/FriendDetails";
 
 
 export const router = createBrowserRouter([
@@ -22,6 +23,11 @@ export const router = createBrowserRouter([
       {
         path: "/stats",
         element: <Stats/>
+      },
+      {
+        path: "/friendDetails/:uniqueID",
+        element: <FriendDetails/>,
+        loader: () => fetch("/friendsData.json")
       }
     ],
     errorElement: <ErrorPage/>
