@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { use } from 'react';
 
-const AllFriends = ({ friends }) => {
-    console.log(friends, "friends");
+const AllFriends = ({ friendsPromise }) => {
+
+    const friends = use(friendsPromise);
 
     return (
         <div className='container mx-auto'>
-            <h2 className='font-bold text-3xl mb-6'>Your Friends</h2>
-
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 container mx-auto'>
                 {
                     friends.map(friend => <div key={friend.id} className="card bg-white shadow-md border border-gray-100 rounded-xl p-6">
                         <div className="flex justify-center mb-4">

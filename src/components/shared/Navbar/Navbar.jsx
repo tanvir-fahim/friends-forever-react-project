@@ -13,9 +13,9 @@ const Navbar = () => {
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal gap-1">
-                        <li><NavLink to="/" className={({ isActive }) => isActive && "bg-[#244D3F] text-white"}><IoMdHome />Home</NavLink></li>
-                        <li><NavLink to="/timeline" className={({ isActive }) => isActive && "bg-[#244D3F] text-white"}><RiTimeLine />Timeline</NavLink></li>
-                        <li><NavLink to="/stats" className={({ isActive }) => isActive && "bg-[#244D3F] text-white"}><ImStatsBars />Stats</NavLink></li>
+                        <li><NavLink to="/" className={({ isActive }) => isActive ? "bg-[#244D3F] text-white" : ""}><IoMdHome />Home</NavLink></li>
+                        <li><NavLink to="/timeline" className={({ isActive }) => isActive ? "bg-[#244D3F] text-white" : ""}><RiTimeLine />Timeline</NavLink></li>
+                        <li><NavLink to="/stats" className={({ isActive }) => isActive ? "bg-[#244D3F] text-white" : ""}><ImStatsBars />Stats</NavLink></li>
                     </ul>
                 </div>
             </div>

@@ -2,7 +2,9 @@ import React from 'react';
 
 const LoadingSpinner = () => {
     return (
-        <span className="loading loading-spinner loading-xl"></span>
+        <div className='max-w-3xl mx-auto py-30 text-center'>
+            <span className="loading loading-spinner loading-xl"></span>
+        </div>
     );
 };
 
