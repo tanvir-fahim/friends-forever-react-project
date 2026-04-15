@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Tom",
+    "image": "/images/Tom.webp",
+    "email": "tom.cat@jerrychase.com",
+    "days_since_contact": 2,
+    "status": "On-Track",
+    "tags": ["rival", "classic"],
+    "bio": "Expert at setting complex traps that usually backfire. Surprisingly good at playing the piano.",
+    "goal": 7,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 2,
+    "name": "Jerry",
+    "image": "/images/Jerry.png",
+    "email": "jerry.mouse@cheese.net",
+    "days_since_contact": 1,
+    "status": "On-Track",
+    "tags": ["close friend", "quick-witted"],
+    "bio": "Loves high-quality cheddar and outsmarting the house cat. Always finds a way to escape.",
+    "goal": 7,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 3,
+    "name": "Oggy",
+    "image": "/images/Oggy.png",
+    "email": "oggy.blue@house.fr",
+    "days_since_contact": 9,
+    "status": "Almost Due",
+    "tags": ["relaxed", "neighbor"],
+    "bio": "Content with gardening and watching TV, if only the cockroaches would leave him alone.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 4,
+    "name": "Motu",
+    "image": "/images/Motu.webp",
+    "email": "motu.samosa@furfuri.in",
+    "days_since_contact": 5,
+    "status": "Overdue",
+    "tags": ["foodie", "loyal"],
+    "bio": "Gains incredible strength after eating samosas. Often gets into trouble with Patlu.",
+    "goal": 10,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 5,
+    "name": "SpongeBob",
+    "image": "/images/Spongebob.png",
+    "email": "spongebob.square@pineapple.sea",
+    "days_since_contact": 1,
+    "status": "On-Track",
+    "tags": ["optimist", "work"],
+    "bio": "Professional fry cook at the Krusty Krab. Expert at blowing bubbles and jellyfishing.",
+    "goal": 1,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 6,
+    "name": "Doraemon",
+    "image": "/images/dora.jpg",
+    "email": "doraemon@gadget.jp",
+    "days_since_contact": 7,
+    "status": "Overdue",
+    "tags": ["mentor", "tech"],
+    "bio": "Robotic cat from the 22nd century. Has a 4D pocket full of gadgets to help Nobita.",
+    "goal": 30,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 7,
+    "name": "Master Po",
+    "image": "/images/Po.webp",
+    "email": "dragonwarrior@kungfu.com",
+    "days_since_contact": 20,
+    "status": "Almost Due",
+    "tags": ["martial arts", "hero"],
+    "bio": "The Dragon Warrior. Master of the Wuxi Finger Hold and a professional noodle enthusiast.",
+    "goal": 45,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 8,
+    "name": "Hattori",
+    "image": "/images/Hattori.webp",
+    "email": "hattori.ninja@iga.com",
+    "days_since_contact": 12,
+    "status": "Overdue",
+    "tags": ["ninja", "discipline"],
+    "bio": "A highly skilled Iga Ninja. Extremely disciplined and always wears his blue ninja suit.",
+    "goal": 7,
+    "next_due_date": "2026-04-12"
+  }
+]

@@ -26,7 +26,7 @@ const HomeBanner = () => {
                     <span className="text-xl">+</span> Add a Friend
                 </button>
 
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
                     {stats.map((stat, index) => (
                         <div
                             key={index}
