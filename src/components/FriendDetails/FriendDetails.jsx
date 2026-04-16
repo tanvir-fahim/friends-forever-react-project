@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaArchive, FaPhoneAlt, FaTrashAlt } from 'react-icons/fa';
 import { FaBell, FaCommentDots, FaVideo } from 'react-icons/fa6';
 import { useLoaderData, useParams } from 'react-router';
+import { FriendContext } from '../../context/FriendContext';
 
 const FriendDetails = () => {
 
     const getParams = useParams();
     // console.log(getParams);
-
     const friends = useLoaderData();
     // console.log(friends);
-
     const uniqueFriend = friends.find(friend => friend.id == getParams.uniqueID);
-    console.log(uniqueFriend);
+    // console.log(uniqueFriend);
+
+    // const timelineContext = useContext(FriendContext);
+    // console.log(timelineContext);
+    const {handleCall,
+        handleText,
+        handleVideo} = useContext(FriendContext);
+
     return (
-        <div className="min-h-screen bg-gray-50 p-8 font-sans text-slate-800">
+        <div className="bg-gray-50 p-8 font-sans text-slate-800">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
 
                 <div className="md:col-span-4 space-y-4">
@@ -28,14 +34,14 @@ const FriendDetails = () => {
 
                         <p className={`px-4 mb-2 py-1 text-sm rounded-full text-white w-fit mx-auto 
                                         ${uniqueFriend.status === 'Overdue'
-                                        ? 'bg-red-500'
-                                        : uniqueFriend.status === 'Almost Due'
-                                            ? 'bg-amber-500'
-                                            : 'bg-[#244D3F]'
-                                    }`}
-                                >
-                                    {uniqueFriend.status}
-                                </p>
+                                ? 'bg-red-500'
+                                : uniqueFriend.status === 'Almost Due'
+                                    ? 'bg-amber-500'
+                                    : 'bg-[#244D3F]'
+                            }`}
+                        >
+                            {uniqueFriend.status}
+                        </p>
 
                         <div className="flex gap-2 mb-4">
                             {uniqueFriend.tags.map(tag => (
@@ -96,15 +102,15 @@ const FriendDetails = () => {
                     <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                         <h3 className="font-bold text-emerald-900 mb-6">Quick Check-In</h3>
                         <div className="grid grid-cols-3 gap-4">
-                            <button className="flex flex-col items-center justify-center gap-2 p-6 bg-slate-50 hover:bg-slate-100 rounded-xl transition-all group">
+                            <button className="flex flex-col items-center justify-center gap-2 p-6 bg-slate-50 hover:bg-slate-100 rounded-xl transition-all group" onClick={() => handleCall(uniqueFriend)} >
                                 <FaPhoneAlt className="text-slate-600 group-hover:scale-110 transition-transform" />
                                 <span className="text-sm font-medium">Call</span>
                             </button>
-                            <button className="flex flex-col items-center justify-center gap-2 p-6 bg-slate-50 hover:bg-slate-100 rounded-xl transition-all group">
+                            <button className="flex flex-col items-center justify-center gap-2 p-6 bg-slate-50 hover:bg-slate-100 rounded-xl transition-all group"  onClick={() => handleText(uniqueFriend)}>
                                 <FaCommentDots size={20} className="text-slate-600 group-hover:scale-110 transition-transform" />
                                 <span className="text-sm font-medium">Text</span>
                             </button>
-                            <button className="flex flex-col items-center justify-center gap-2 p-6 bg-slate-50 hover:bg-slate-100 rounded-xl transition-all group">
+                            <button className="flex flex-col items-center justify-center gap-2 p-6 bg-slate-50 hover:bg-slate-100 rounded-xl transition-all group" onClick={() => handleVideo(uniqueFriend)}>
                                 <FaVideo size={20} className="text-slate-600 group-hover:scale-110 transition-transform" />
                                 <span className="text-sm font-medium">Video</span>
                             </button>

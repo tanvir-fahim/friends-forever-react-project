@@ -11,7 +11,7 @@ const Home = () => {
         <div>
             <HomeBanner />
             <div className='container mx-auto'>
-                <h2 className='font-bold text-3xl mb-6'>Your Friends</h2>
+                <h2 className='font-bold text-3xl mb-6 px-4'>Your Friends</h2>
             </div>
             <Suspense fallback={<LoadingSpinner />}>
                 <AllFriends friendsPromise={friendsPromise} />

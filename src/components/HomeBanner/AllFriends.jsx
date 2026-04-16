@@ -6,8 +6,8 @@ const AllFriends = ({ friendsPromise }) => {
     const friends = use(friendsPromise);
 
     return (
-        <div className='container mx-auto'>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 container mx-auto'>
+        <div className='container mx-auto px-4 md:px-8'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10'>
                 {
                     friends.map(friend => <NavLink to={`/friendDetails/${friend.id}`} key={friend.id} className="card bg-white shadow-md border border-gray-100 rounded-xl p-6">
                         <div className="flex justify-center mb-4">
