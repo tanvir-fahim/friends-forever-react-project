@@ -6,7 +6,7 @@ export const FriendContext = createContext();
 const FriendProvider = ({ children }) => {
 
     const [timelineData, setTimelineData] = useState([]);
-    console.log(timelineData);
+    // console.log(timelineData);
 
     const handleCall = (currentFriend) => {
         // console.log(currentFriend);

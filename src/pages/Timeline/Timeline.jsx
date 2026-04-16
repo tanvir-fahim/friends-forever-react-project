@@ -3,13 +3,14 @@ import { FriendContext } from '../../context/FriendContext';
 import { MdAddIcCall } from 'react-icons/md';
 import { TiMessages } from 'react-icons/ti';
 import { IoVideocamOutline } from 'react-icons/io5';
+import { FaHistory } from 'react-icons/fa';
 
 
 
 const Timeline = () => {
 
     const { timelineData } = useContext(FriendContext);
-    console.log(timelineData);
+    // console.log(timelineData);
 
     return (
         <div className='container mx-auto'>
@@ -17,9 +18,9 @@ const Timeline = () => {
 
             {timelineData && timelineData.length > 0 ? (
                 <div className="p-8 space-y-2">
-                    {timelineData.map((item) => (
+                    {timelineData.map((item, index) => (
                         <div
-                            key={item.id}
+                            key={index}
                             className="flex items-center gap-4 p-4 border-2  border-blue-200 rounded-lg bg-white"
                         >
 
@@ -48,7 +49,7 @@ const Timeline = () => {
                 <div className='container mx-auto px-10 mb-4'> 
                     <div className="flex flex-col items-center justify-center min-h-75 border-2 border-dashed border-gray-200 rounded-2xl bg-gray-100">
                         <div className="w-12 h-12 mb-4 rounded-full bg-gray-100 flex items-center justify-center">
-                            <span className="text-2xl">📅</span>
+                            <span className="text-2xl"><FaHistory /></span>
                         </div>
 
                         <h3 className="text-lg font-semibold text-gray-900">No activities yet</h3>
