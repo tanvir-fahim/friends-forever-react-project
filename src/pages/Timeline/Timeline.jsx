@@ -20,7 +20,7 @@ const Timeline = () => {
                     {timelineData.map((item) => (
                         <div
                             key={item.id}
-                            className="flex items-center gap-4 p-4 border-2  border-blue-200 rounded-sm bg-white"
+                            className="flex items-center gap-4 p-4 border-2  border-blue-200 rounded-lg bg-white"
                         >
 
                             <div className="text-3xl">
@@ -45,15 +45,17 @@ const Timeline = () => {
                     ))}
                 </div>
             ) : (
-                <div className="flex flex-col items-center justify-center min-h-75 p-8 mt-4 border-2 border-dashed border-gray-200 rounded-2xl bg-gray-50/50">
-                    <div className="w-12 h-12 mb-4 rounded-full bg-gray-100 flex items-center justify-center">
-                        <span className="text-2xl">📅</span>
-                    </div>
+                <div className='container mx-auto px-10 mb-4'> 
+                    <div className="flex flex-col items-center justify-center min-h-75 border-2 border-dashed border-gray-200 rounded-2xl bg-gray-100">
+                        <div className="w-12 h-12 mb-4 rounded-full bg-gray-100 flex items-center justify-center">
+                            <span className="text-2xl">📅</span>
+                        </div>
 
-                    <h3 className="text-lg font-semibold text-gray-900">No activities yet</h3>
-                    <p className="text-gray-500 text-center max-w-3/4">
-                        Contact your friends and strengthen the bond.
-                    </p>
+                        <h3 className="text-lg font-semibold text-gray-900">No activities yet</h3>
+                        <p className="text-gray-500 text-center max-w-3/4">
+                            Contact your friends and strengthen the bond.
+                        </p>
+                    </div>
                 </div>
             )}
         </div>

@@ -2,10 +2,13 @@ import React from 'react';
 import Navbar from '../components/shared/Navbar/Navbar';
 import { Outlet } from 'react-router';
 import Footer from '../components/shared/Footer/Footer';
+import ScrollToTop from '../ScrollTop/ScrollTop';
 
 const MainLayout = () => {
     return (
         <div className="flex flex-col min-h-screen bg-[#F8FAFC]">
+
+            <ScrollToTop/>
 
             <nav className="fixed top-0 left-0 w-full z-50">
                 <Navbar />
