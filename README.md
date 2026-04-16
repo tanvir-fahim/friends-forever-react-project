@@ -10,7 +10,7 @@ Technologies Used:
 
 3. Tailwind CSS: For styling and responsiveness.
 
-4.DaisyUI: Component library for UI elements like buttons, cards, and navbars.
+4. DaisyUI: Component library for UI elements like buttons, cards, and navbars.
 
 5. Recharts: For displaying interaction data via a pie chart.
 
