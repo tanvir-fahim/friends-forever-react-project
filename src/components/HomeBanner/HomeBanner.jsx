@@ -3,7 +3,7 @@ import React from 'react';
 const HomeBanner = () => {
     const stats = [
         { label: 'Total Friends', value: 10 },
-        { label: 'On Track', value: 3 },
+        { label: 'On Track', value: 4 },
         { label: 'Need Attention', value: 6 },
         { label: 'Interactions This Month', value: 12 },
     ];

@@ -94,5 +94,29 @@
     "bio": "A highly skilled Iga Ninja. Extremely disciplined and always wears his blue ninja suit.",
     "goal": 7,
     "next_due_date": "2026-04-12"
+  },
+    {
+    "id": 9,
+    "name": "Shinchan Nohara",
+    "image": "/images/shinchan.jpg",
+    "email": "shinchan.mischief@kasukabe.jp",
+    "days_since_contact": 15,
+    "status": "Almost Due",
+    "tags": ["funny", "mischievous"],
+    "bio": "A naughty kindergarten kid known for his hilarious antics and love for choco chips.",
+    "goal": 7,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 10,
+    "name": "Ben Tennyson",
+    "image": "/images/ben.png",
+    "email": "ben.hero@omnitrix.com",
+    "days_since_contact": 3,
+    "status": "On-Track",
+    "tags": ["hero", "alien"],
+    "bio": "A young hero with the Omnitrix, allowing him to transform into various powerful aliens.",
+    "goal": 10,
+    "next_due_date": "2026-04-22"
   }
 ]
