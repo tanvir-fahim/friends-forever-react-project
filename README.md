@@ -10,11 +10,11 @@ Technologies Used:
 
 3. Tailwind CSS: For styling and responsiveness.
 
-4.DaisyUI: Component library for UI elements like buttons, cards, and navbars.
+4. DaisyUI: Component library for UI elements like buttons, cards, and navbars.
 
 5. Recharts: For displaying interaction data via a pie chart.
 
-React Icon: For navigation and action icons.
+6. React Icon: For navigation and action icons.
 
 Key Features:
 1. Friend Management Dashboard: A home page that displays friend profiles with color-coded status indicators (overdue, almost due, on-track) based on the last contact date.
