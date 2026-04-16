@@ -4,15 +4,15 @@ Description:
 KeenKeeper is a friendship management application designed to help users maintain regular contact with their friends. It allows users to track their last interaction dates, set contact goals, and log new interactions via a digital timeline.
 
 Technologies Used:
-React.js: For building the user interface.
+1. React.js: For building the user interface.
 
-React Router DOM: For handling page navigation and routing.
+2. React Router DOM: For handling page navigation and routing.
 
-Tailwind CSS: For styling and responsiveness.
+3. Tailwind CSS: For styling and responsiveness.
 
-DaisyUI: Component library for UI elements like buttons, cards, and navbars.
+4.DaisyUI: Component library for UI elements like buttons, cards, and navbars.
 
-Recharts: For displaying interaction data via a pie chart.
+5. Recharts: For displaying interaction data via a pie chart.
 
 React Icon: For navigation and action icons.
 
